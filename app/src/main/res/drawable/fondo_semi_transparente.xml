@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/biblioteca" />
+    </item>
+    <item>
+        <color android:color="#80000000" /> <!-- El valor de 80 en el código de color indica la opacidad, donde 80 es aproximadamente el 50% -->
+    </item>
+</layer-list>

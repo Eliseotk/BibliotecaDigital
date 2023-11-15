@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvNumero"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="18dp"
+    android:rotationX="0">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/tvContacto"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:rotationX="0">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:text="Nombre" />
+
+        <TextView
+            android:id="@+id/tvCelular"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:text="Celular" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnLlamar"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="10dp"
+            android:text="Llamar"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:id="@+id/tvBotones"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="11dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:rotationX="0">
+
+            <ImageButton
+                android:id="@+id/btnEditar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="start|center_horizontal"
+                android:contentDescription="Editar"
+                android:background="@drawable/editar" />
+
+            <ImageButton
+                android:id="@+id/btnEliminar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:contentDescription="Eliminar"
+                android:background="@drawable/eliminar"/>
+
+            <ImageButton
+                android:id="@+id/btnUbicacion"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="end|center_horizontal"
+                android:contentDescription="Ubicacion"
+                android:background="@drawable/ubicacion" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
